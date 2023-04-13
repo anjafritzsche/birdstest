@@ -1,0 +1,255 @@
+
+
+body {
+  background-color: rgb(255, 255, 255);
+        font-family: Be Vietnam Pro;
+        max-width: 800px;
+        margin: auto;
+      
+}
+/* * {
+  border: 1px solid #000*;
+  } */
+
+/*      ----------------      Anfang Fonts       ---------------*/
+
+/* glegoo-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Glegoo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/glegoo-v14-latin-regular.woff2') format('woff2'); 
+      
+}
+
+/* be-vietnam-pro-100 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./fonts/be-vietnam-pro-v10-latin-100.woff2') format('woff2');
+}
+/* be-vietnam-pro-100italic - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: italic;
+  font-weight: 100;
+  src: url('./fonts/be-vietnam-pro-v10-latin-100italic.woff2') format('woff2');
+}
+/* be-vietnam-pro-200 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: url('./fonts/be-vietnam-pro-v10-latin-200.woff2') format('woff2');
+}
+/* be-vietnam-pro-300 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./fonts/be-vietnam-pro-v10-latin-300.woff2') format('woff2');
+}
+/* be-vietnam-pro-regular - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2');
+}
+/* be-vietnam-pro-500 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/be-vietnam-pro-v10-latin-500.woff2') format('woff2');
+}
+/* be-vietnam-pro-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/be-vietnam-pro-v10-latin-600.woff2') format('woff2');
+}
+/* be-vietnam-pro-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/be-vietnam-pro-v10-latin-700.woff2') format('woff2');
+}
+/* be-vietnam-pro-800 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/be-vietnam-pro-v10-latin-800.woff2') format('woff2');
+}
+/* glegoo-700 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Glegoo';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/glegoo-v14-latin-700.woff2') format('woff2'); 
+}
+
+/*      -----------      Allgemeine Angaben       ----------*/
+
+p {
+  line-height: 1,5;
+  font-weight: 200;
+  color: black;
+  text-align: justify;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+p:first-of-type:first-letter {
+  font-size: 250%;
+  line-height: 1;
+  float: left;
+  padding-right: .25em;
+}
+/* Anpassungen für Firefox */
+@-moz-document url-prefix() {
+  p:first-of-type:first-letter {
+    margin-top: .15em;
+  }
+}
+
+h1 {
+  color: #012E40;
+  font-family: glegoo;
+font-weight: 700;
+font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #a0a0a0;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+h3 {
+  color: #f2622e;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+text-align: left;
+text-indent: 155px;
+padding: 0;
+margin: 0 0 10px;
+  
+  
+}
+figure {
+  text-align: center;
+}
+
+/*  */
+figcaption {
+  color: white;
+  font-style: oblique;
+  font-weight: 100;
+  text-align: left;
+  text-indent: 155px;
+  margin-top: 10px;
+}
+ul {
+  list-style-type: none;
+  background-color: #012E40;
+  border-radius: 0 0 50px 50px;
+  padding: 20px;
+  margin: 0;
+}
+/* damit die Listenpunkte entfallen */
+li {
+  display: inline-block;
+  max-width: 800px;
+}
+
+/* die li-Elemente werden freundlich und rutschen nebeneinander */
+
+
+
+nav {
+  font-weight: 200;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  /* keine Linie unter a-Element */
+  padding: 20px 5px;
+  margin: 0px 0px;
+  /* die a-Elemente rutschen weiter auseinander. Der Text hat mehr Abstand zum Container */
+  text-transform: uppercase;
+  /* border-bottom: 3px solid #8C6542; */
+}
+
+a.current {
+  border-bottom: 5px solid #F2622E;
+}
+/* hier wird die Klasse current angesprochen. 
+Das 'a' wird davorgesetzt um die zuweisung weiter zu spezifizieren*/
+
+a:hover {background-color: #F2622E;color: white;}
+nav a:focus {background-color: #e8c1a2;}
+nav a:active {background-color: #e8a674;}
+
+/*      ----------------      Anfang MAIN       ---------------*/
+
+
+div.articlestart {
+padding: 20px;
+background: #012e40; /* Old browsers */
+background: -moz-linear-gradient(top,  #012e40 3%, #02374d 53%, #012e40 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #012e40 3%,#02374d 53%,#012e40 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #012e40 3%,#02374d 53%,#012e40 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#012e40', endColorstr='#012e40',GradientType=0 ); /* IE6-9 */
+
+  text-align: center;
+  border-radius: 50px;
+}
+
+/*      ----------------      Anfang Footer       ---------------*/
+
+footer {
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  background-color: #012E40;
+  padding: 10px 0px;
+  margin: 0px 0px;
+  border-radius: 50px 50px 0 0;
+}
+
+footer a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0;
+
+}
